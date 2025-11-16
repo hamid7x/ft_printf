@@ -6,7 +6,7 @@
 /*   By: houkaamo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 20:52:03 by houkaamo          #+#    #+#             */
-/*   Updated: 2025/11/15 20:53:28 by houkaamo         ###   ########.fr       */
+/*   Updated: 2025/11/16 09:59:15 by houkaamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,9 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <stdio.h>
 # include <unistd.h>
 
-int		ft_printf(char *format, ...);
+int		ft_printf(const char *format, ...);
 void	ft_print_char(char c, int *cnt);
 void	ft_print_number(int n, int *cnt);
 void	ft_print_str(char *s, int *cnt);

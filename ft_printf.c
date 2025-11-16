@@ -6,7 +6,7 @@
 /*   By: houkaamo <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/15 20:54:58 by houkaamo          #+#    #+#             */
-/*   Updated: 2025/11/15 21:08:56 by houkaamo         ###   ########.fr       */
+/*   Updated: 2025/11/16 09:59:33 by houkaamo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	is_valid_conversion(char *s, char c)
 static void	handle_conversion(char c, va_list args, int *count)
 {
 	if (c == 'c')
-		ft_print_char((char)va_arg(args, int), count);
+		ft_print_char((va_arg(args, int), count);
 	else if (c == 's')
 		ft_print_str(va_arg(args, char *), count);
 	else if (c == 'd' || c == 'i')
@@ -44,7 +44,7 @@ static void	handle_conversion(char c, va_list args, int *count)
 		ft_print_char('%', count);
 }
 
-int	ft_printf(char *format, ...)
+int	ft_printf(const char *format, ...)
 {
 	va_list	args;
 	int		total_printed;
